@@ -1,0 +1,25 @@
+# --- Python (Caches e ambiente virtual) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+
+# --- VS Code ---
+.vscode/
+
+# --- DADOS (O filtro para arquivos Excel) ---
+# Bloqueia todos os arquivos Excel em qualquer pasta
+*.xlsx
+*.xls
+*.csv
+
+# Se quiser ser ainda mais específico para a sua estrutura:
+data/entrada/*.xlsx
+data/saida/*.xlsx
+
+# --- SEGURANÇA E LOGS ---
+*.log
+.env
+secrets.json
