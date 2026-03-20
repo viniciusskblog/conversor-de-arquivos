@@ -24,3 +24,7 @@ temp_files/
 # --- Sistema ---
 .DS_Store
 Thumbs.db
+
+# Arquivos de Excel
+
+*.xlsx
