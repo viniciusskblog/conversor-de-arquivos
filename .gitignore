@@ -1,25 +1,26 @@
-# --- Python (Caches e ambiente virtual) ---
+# --- Python ---
 __pycache__/
 *.py[cod]
 *$py.class
-.pytest_cache/
-venv/
 .venv/
+venv/
+env/
 
 # --- VS Code ---
 .vscode/
+*.code-workspace
 
-# --- DADOS (O filtro para arquivos Excel) ---
-# Bloqueia todos os arquivos Excel em qualquer pasta
-*.xlsx
-*.xls
-*.csv
-
-# Se quiser ser ainda mais específico para a sua estrutura:
-data/entrada/*.xlsx
-data/saida/*.xlsx
-
-# --- SEGURANÇA E LOGS ---
-*.log
+# --- Segurança e Configuração (CRÍTICO) ---
 .env
+*.log
 secrets.json
+
+# --- Específico do seu Conversor ---
+# Não queremos salvar os arquivos que estão sendo convertidos!
+inputs/
+outputs/
+temp_files/
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
